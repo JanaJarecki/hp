@@ -1,0 +1,16 @@
+---
+title: "Reporting mixed-effects Models"
+author: "Jana B. Jarecki"
+date: '`r Sys.Date()`'
+
+---
+# What are linear mixed models? A brief reminder
+
+Repeated-measures analyses are what I use linear mixed models mostly for. Linear mixed models account for clustered errors in data. Think of within-subject/repeated measures, but also designs involving food categories, families, social groups, domains – anything with more than one data point from a source or a group. My use case: multiple decisions/answers regarding similar questions per participant. Linear mixed models control for participant xyz answering repeated questions in her own idiosyncratic manner, and participant abc answering repeated questions in his own special manner, causing the data of participant xyz to be similar to each other, and the data of abc to be similar to each other. In short, participant 1’s responses are not independent of each other. Formally, if modelling this data with a linear model (e.g., regression) the model’s residuals/errors will be correlated within participants (homoscedastic errors). Mixed effect models take these clustered responses into account, you just have to tell the model to, for example, cluster data within each participant. You can also cluster responses within families, social groups, any variable that groups your data.
+
+To use these models in R, check this tutorial, this blog post, or these examples. I’ll talk about reporting.
+
+# Reporting linear mixed models
+
+
+
